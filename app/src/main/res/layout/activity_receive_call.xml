@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiveCallActivity">
+
+    <TextView
+        android:id="@+id/txtvCallType"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtvPhoneNumber"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/txtvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRejectCall"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtvPhoneNumber"
+        android:text=" Reject "
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAcceptCall"
+        android:layout_below="@id/txtvPhoneNumber"
+        android:layout_marginTop="100dp"
+        android:text=" Accept "
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
